@@ -1,0 +1,13 @@
+PODS:
+  - MagicalRecord (2.1)
+  - PSTCollectionView (1.1.0)
+
+DEPENDENCIES:
+  - MagicalRecord (~> 2.1)
+  - PSTCollectionView
+
+SPEC CHECKSUMS:
+  MagicalRecord: 64e7184c240087a45e9588a722eaf05b0ad837f7
+  PSTCollectionView: af42b0fb111200a1b87a04aee96181725977f19b
+
+COCOAPODS: 0.22.1

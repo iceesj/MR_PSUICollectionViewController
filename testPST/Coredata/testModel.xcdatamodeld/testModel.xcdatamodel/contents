@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Event" representedClassName="Event" syncable="YES">
+        <attribute name="event_fangfa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_fangfaIMG" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_subtitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unique" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="whoDo" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Test" inverseName="events" inverseEntity="Test" syncable="YES"/>
+    </entity>
+    <entity name="Test" representedClassName="Test" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="whoDo" inverseEntity="Event" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Test" positionX="-434" positionY="254" width="128" height="88"/>
+        <element name="Event" positionX="-252" positionY="216" width="128" height="133"/>
+    </elements>
+</model>
